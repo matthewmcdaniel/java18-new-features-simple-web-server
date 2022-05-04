@@ -14,7 +14,8 @@ public class StandardHandler  implements HttpHandler {
 
         exchange.sendResponseHeaders(200, 0);
         OutputStream os = exchange.getResponseBody();
-        os.write("<html><head></head><body><h1>Hello, you have invoked the standard handler!</h1></body></html>".getBytes());
+        os.write("<html><head></head><body>".getBytes());
+        os.write("<h1>Hello, you have invoked the standard handler!</h1>".getBytes());
         exchange.getRequestHeaders().forEach((k,v) -> {
             String str = "<p>Header key: " + k + "; " + "Header value: " + v + "</p>";
             try {
@@ -23,6 +24,7 @@ public class StandardHandler  implements HttpHandler {
                 throw new RuntimeException(e);
             }
         });
+        os.write("</body></html>".getBytes());
         os.close();
 
     }
