@@ -1,4 +1,4 @@
-Link to JEP:  https://openjdk.java.net/jeps/408
+**Link to JEP**:  https://openjdk.java.net/jeps/408
 
 Java 18 now includes the Simple Web Server, a utility (and API) that allows you to painlessly launch a basic web server. 
 The implementation of a web server in Java is hardly a new concept, in fact, the HttpServer package has been included since 2006.
@@ -13,7 +13,11 @@ server designed to serve static files.
 This program looks at the Simple Web Server API.
 
 
-Usage: mvn clean package
-       java -jar .\target\java18-new-features-simple-web-server-1.0-SNAPSHOT.jar
+Usage
+------
 
+```
+mvn clean package
+java -jar .\target\java18-new-features-simple-web-server-1.0-SNAPSHOT.jar
+```
  
