@@ -7,7 +7,7 @@ import java.io.IOException;
 import java.io.OutputStream;
 import java.nio.charset.StandardCharsets;
 
-public class StandardHandler  implements HttpHandler {
+public class StandardHandler implements HttpHandler {
 
     @Override
     public void handle(HttpExchange exchange) throws IOException {
